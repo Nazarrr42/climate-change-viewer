@@ -1,0 +1,72 @@
+/* Basic mixins */
+@mixin unselected-text() {
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@mixin no-btn($display: "inline-block") {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  appearance: none;
+  display: #{$display};
+}
+@mixin no-input($placeholderColor: rgba(57, 61, 63, 0.4), $display: "block") {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  &::placeholder {
+    color: rgba(57, 61, 63, 0.4);
+  }
+  &:focus {
+    outline: none;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+/* First two main items(db-item, settings-item) */
+
+@mixin first2-items-wrapper($item-height, $item-width) {
+  height: $item-height;
+  width: $item-width;
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin first2-items-accordion(
+  $item-accordion-margin,
+  $item-accordion-height,
+  $item-accordion-width
+) {
+  margin: $item-accordion-margin;
+  height: $item-accordion-height;
+  min-width: $item-accordion-width;
+}
+
+@mixin first2-items-content(
+  $item-content-margin-t-b,
+  $item-content-margin-r-l
+) {
+  margin: $item-content-margin-t-b $item-content-margin-r-l;
+  width: 100%;
+}
+
+/* Child Items(swat, forecast...) */
+
+@mixin child-wrapper-for-text(
+  $item-text-color,
+  $item-font,
+  $item-height,
+  $item-width
+) {
+  color: $item-text-color;
+  font-family: $item-font;
+  height: $item-height;
+  width: $item-width;
+}

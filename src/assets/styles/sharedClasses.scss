@@ -1,0 +1,126 @@
+$vs-state-active-bg: $main-darkbrown !important;
+$vs-state-active-color: $main-white !important;
+// $vs-dropdown-max-height: 36px !important;
+$vs-border-radius: $control-panel-border-radius !important;
+$vs-dropdown-bg: $main-white !important;
+$vs-border-color: $main-darkbrown-opacity !important;
+$vs-selected-border-color: rgba(0, 0, 0, 0) !important;
+$vs-selected-padding: 20px !important;
+$vs-controls-color: $main-darkbrown !important;
+$vs-dropdown-min-width: 14.44444444444444rem !important; //  195px / 13.5
+
+.v-select {
+  font-family: $child-text-font !important;
+  max-height: $control-panel-height;
+}
+.vs__selected {
+  margin: auto 2px auto 0 !important;
+  padding: 0 5px 0 10px !important;
+  line-height: 1.1 !important;
+  color: $main-darkbrown !important;
+  font-size: $control-panel-font-size !important;
+}
+.vs__search,
+.vs__search:focus {
+  line-height: 1.1 !important;
+  margin: auto 0 !important;
+  padding: 0 5px 0 10px !important;
+}
+.vs__search {
+  position: absolute !important;
+  width: 100% !important;
+  top: 22% !important;
+  font-family: $child-text-font;
+  font-size: $control-panel-font-size !important;
+  color: $main-darkbrown !important;
+}
+.vs--single.vs--open .vs__selected {
+  position: static !important;
+}
+.vs__clear {
+  display: none !important;
+}
+.vs__actions {
+  padding: 0 0.4444444444444444rem 0 0.2222222222222222rem !important; //  6px / 13.5, 3px / 13.5
+  height: $control-panel-height !important;
+}
+.vs__selected-options {
+  padding: 0px 2px 2px 0px !important;
+  height: $control-panel-height !important;
+}
+.vs__open-indicator {
+  fill: $main-darkbrown !important;
+  // transform: scale();
+}
+.vs__dropdown-toggle {
+  border-color: $main-darkbrown-opacity !important;
+  max-height: $control-panel-height;
+  height: $control-panel-height;
+  overflow: hidden;
+}
+.vs__dropdown-menu {
+  font-size: 0.9642857142857143rem !important; //  13.5px / 13.5
+}
+.vs__dropdown-toggle:hover {
+  border-color: $main-darkbrown !important;
+}
+
+@import "vue-select/src/scss/vue-select.scss";
+
+// Checkbox, radio
+.custom__checkbox,
+.custom__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom__checkbox + label,
+.custom__checkbox + label {
+  user-select: none;
+}
+.custom__checkbox + label::before {
+  content: "";
+  display: block;
+  width: $layers-group-input-size;
+  height: $layers-group-input-size;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 0.0746268656716418rem solid $main-darkbrown-opacity;
+  background-color: $main-white-opacity2;
+  border-radius: $layers-group-elements-margin-right;
+  background-repeat: no-repeat;
+  background-image: none;
+  background-position: center center;
+  background-size: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
+}
+.custom__checkbox:checked + label::before {
+  border: 0.0746268656716418rem solid $main-darkbrown;
+  background-image: url("~@/assets/images/checkmark_icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.custom__radio + label::before {
+  content: "";
+  display: block;
+  width: $layers-group-input-size;
+  height: $layers-group-input-size;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 0.0746268656716418rem solid $main-darkbrown-opacity; //  1px / 13.5
+  background-color: $main-white-opacity2;
+  border-radius: 50%;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
+}
+.custom__radio:checked + label::before {
+  border-color: $main-darkbrown;
+  background: url("~@/assets/images/circle-image.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}

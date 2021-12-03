@@ -1,0 +1,113 @@
+{
+  "vizItem": {
+    "twoLvlAccordionData": [
+      {
+        "label": "Climate projections",
+        "isWrapper": true,
+        "route": "/viz-item",
+        "nodes": [
+          {
+            "label": "Air temperature",
+            "showedLabel": "Climate projections (Euro-CORDEX)",
+            "chartTitle": "Air temperature, С°",
+            "overlayNames": [
+              {
+                "name": "Ukraine",
+                "show": true,
+                "realLabel": "Air temperature",
+                "type": "radio",
+                "chartTitle": "Air temperature, С°"
+              },
+              {
+                "name": "Administrative oblasts",
+                "show": true,
+                "realLabel": "Air temperature",
+                "type": "radio",
+                "chartTitle": "Air temperature, С°"
+              },
+              {
+                "name": "Administrative rayons",
+                "show": true,
+                "realLabel": "Air temperature",
+                "type": "radio",
+                "chartTitle": "Air temperature, С°"
+              },
+              {
+                "name": "Territorial communities",
+                "show": true,
+                "realLabel": "Air temperature",
+                "type": "radio",
+                "chartTitle": "Air temperature, С°"
+              },
+              {
+                "name": "River basins",
+                "show": true,
+                "type": "radio",
+                "realLabel": "Air temperature",
+                "chartTitle": "Air temperature, С°"
+              },
+              {
+                "name": "grid 0.11x0.11°",
+                "show": true,
+                "realLabel": "Air temperature",
+                "type": "radio",
+                "chartTitle": "Air temperature, С°"
+              }
+            ],
+            "defaultOverlayNames": []
+          },
+          {
+            "label": "Precipitation",
+            "chartTitle": "Precipitation, mm",
+            "showedLabel": "Climate projections (Euro-CORDEX)",
+            "overlayNames": [
+              {
+                "name": "Ukraine",
+                "show": true,
+                "type": "radio",
+                "realLabel": "Precipitation",
+                "chartTitle": "Precipitation, mm"
+              },
+              {
+                "name": "Administrative oblasts",
+                "show": true,
+                "type": "radio",
+                "realLabel": "Precipitation",
+                "chartTitle": "Precipitation, mm"
+              },
+              {
+                "name": "Administrative rayons",
+                "show": true,
+                "type": "radio",
+                "realLabel": "Precipitation",
+                "chartTitle": "Precipitation, mm"
+              },
+              {
+                "name": "Territorial communities",
+                "show": true,
+                "type": "radio",
+                "realLabel": "Precipitation",
+                "chartTitle": "Precipitation, mm"
+              },
+              {
+                "name": "River basins",
+                "show": true,
+                "realLabel": "Precipitation",
+                "type": "radio",
+                "chartTitle": "Precipitation, mm"
+              },
+              {
+                "name": "grid 0.11x0.11°",
+                "show": true,
+                "realLabel": "Precipitation",
+                "type": "radio",
+                "chartTitle": "Precipitation, mm"
+              }
+            ],
+            "defaultOverlayNames": []
+          }
+        ]
+      }
+    ]
+  }
+}

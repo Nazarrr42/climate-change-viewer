@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("~@/assets/fonts/BarlowCondensedMedium/BarlowCondensed-Medium.eot");
+  src: local("Barlow Condensed Medium"), local("BarlowCondensed-Medium"),
+    url("~@/assets/fonts/BarlowCondensedMedium/BarlowCondensed-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("~@/assets/fonts/BarlowCondensedMedium/BarlowCondensed-Medium.woff2")
+      format("woff2"),
+    url("~@/assets/fonts/BarlowCondensedMedium/BarlowCondensed-Medium.woff")
+      format("woff"),
+    url("~@/assets/fonts/BarlowCondensedMedium/BarlowCondensed-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-SemiBold.eot");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+    url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-SemiBold.woff2")
+      format("woff2"),
+    url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-SemiBold.woff") format("woff"),
+    url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-SemiBold.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-ExtraBold.eot");
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"),
+    url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-ExtraBold.woff2")
+      format("woff2"),
+    url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-ExtraBold.woff") format("woff"),
+    url("~@/assets/fonts/OpenSansExtraSemiBold/OpenSans-ExtraBold.ttf")
+      format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}

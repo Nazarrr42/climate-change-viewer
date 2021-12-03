@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "name": "Historical observations",
+      "overlayNames": [
+        {
+          "name": "Ukraine (1881-2020)",
+          "show": true,
+          "realLabel": "none",
+          "chartTitle": "Air temperature, С°",
+          "type": "radio"
+        },
+         {
+           "name": "Meteorological stations (1881-2020)",
+           "show": true,
+           "realLabel": "none",
+           "chartTitle": "Air temperature, С°",
+           "type": "radio"
+         }
+      ]
+    }
+  ]
+}

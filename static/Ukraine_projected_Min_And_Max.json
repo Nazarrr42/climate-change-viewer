@@ -1,0 +1,32 @@
+{
+  "values": {
+    "min_tmp": {
+      "annual": -0.4,
+      "winter": -0.2,
+      "spring": -0.2,
+      "summer": -0.8,
+      "autumn": -0.5
+    },
+    "max_tmp": {
+      "annual": 4.8,
+      "winter": 5.5,
+      "spring": 4.4,
+      "summer": 5,
+      "autumn": 4.4
+    },
+    "min_pcp": {
+      "annual": -11,
+      "winter": -6,
+      "spring": -5,
+      "summer": -23,
+      "autumn": -16
+    },
+    "max_pcp": {
+      "annual": 12,
+      "winter": 25,
+      "spring": 20,
+      "summer": 7,
+      "autumn": 14
+    }
+  }
+}

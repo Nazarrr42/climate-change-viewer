@@ -1,0 +1,248 @@
+{
+  "dbItem": {
+    "titles": [
+      "Observations",
+      "Climate re-analysis",
+      "Forecast",
+      "Climate projections",
+      "Agriculture",
+      "SWAT"
+    ],
+    "routes": [
+      "/db-item/observations",
+      "/db-item/re-analysis",
+      "/db-item/forecast",
+      "/db-item/climate-projections",
+      "/db-item/agriculture",
+      "/db-item/swat"
+    ]
+  },
+  "settingsItem": {
+    "titles": ["SWAT"],
+    "routes": ["/settings-item/swat"]
+  },
+  "vizItem": {
+    "twoLvlAccordionData": [
+      {
+        "label": "Observations",
+        "route": "/viz-item",
+        "nodes": [
+          {
+            "label": "Air temperature"
+          },
+          {
+            "label": "Precipitation"
+          },
+          {
+            "label": "Discharge",
+            "overlayNames": [
+              { "name": "Ukrainian gauges", "show": true, "type": "checkbox" },
+              {
+                "name": "Ukrainian gauges (non-operate)",
+                "show": true,
+                "type": "checkbox"
+              },
+              { "name": "Belarusian gauges", "show": true, "type": "checkbox" }
+            ],
+            "defaultOverlayNames": [
+              { "name": "Ukrainian gauges", "show": true, "type": "checkbox" }
+            ]
+          },
+          {
+            "label": "Water chemistry",
+            "overlayNames": [
+              { "name": "Hydromet network", "show": true, "type": "checkbox" },
+              {
+                "name": "Kyivvodokanal gauge",
+                "show": false,
+                "type": "checkbox"
+              }
+            ],
+            "defaultOverlayNames": [
+              {
+                "name": "Hydromet network",
+                "show": true,
+                "type": "checkbox"
+              }
+            ],
+            "nodes": [
+              {
+                "itemType": "select",
+                "options": [
+                  { "name": "pH", "unit": "" },
+                  { "name": "Suspended material", "unit": "" },
+                  { "name": "Water temperature", "unit": ", C°" },
+                  { "name": "Oxygen", "unit": ", mg/dm³" },
+                  { "name": "Oxygen saturation", "unit": ", %" },
+                  { "name": "Permanganate index", "unit": ", mgO/dm³" },
+                  { "name": "Dichromate oxidizability", "unit": ", mgO/dm³" },
+                  { "name": "BOD", "unit": ", mgO²/dm³" },
+                  { "name": "CO₂", "unit": ", mg/dm³" },
+                  { "name": "HCO₃", "unit": ", mg/dm³" },
+                  { "name": "SO₄", "unit": ", mg/dm³" },
+                  { "name": "Cl", "unit": ", mg/dm³" },
+                  { "name": "Ca", "unit": ", mg/dm³" },
+                  { "name": "Mg", "unit": ", mg/dm³" },
+                  { "name": "Na", "unit": ", mg/dm³" },
+                  { "name": "K", "unit": ", mg/dm³" },
+                  { "name": "sum of ions", "unit": ", mg/dm³" },
+                  { "name": "hardness", "unit": ", mg-eq/dm³" },
+                  { "name": "NH₄", "unit": ", mg/dm³" },
+                  { "name": "NO₂", "unit": ", mg/dm³" },
+                  { "name": "NO₃", "unit": ", mg/dm³" },
+                  { "name": "NH4+NO2+NO₃", "unit": ", mg/dm³" },
+                  { "name": "Phosphates", "unit": ", mg/dm³" },
+                  { "name": "P total", "unit": ", mg/dm³" },
+                  { "name": "Si", "unit": ", mg/dm³" },
+                  { "name": "Fe total", "unit": ", mg/dm³" },
+                  { "name": "Cu", "unit": ", mcg/dm³" },
+                  { "name": "Mn", "unit": ", mcg/dm³" },
+                  { "name": "Zn", "unit": ", mcg/dm³" },
+                  { "name": "Cr (6+)", "unit": ", mcg/dm³" },
+                  { "name": "Fe 2+", "unit": ", mg/dm³" },
+                  { "name": "H₂S", "unit": ", mg/dm³" },
+                  { "name": "Phenols", "unit": ", mg/dm³" },
+                  { "name": "Petrochemicals", "unit": ", mg/dm³" },
+                  { "name": "Synthetic surfactants", "unit": ", mg/dm³" },
+                  { "name": "p,p'-DDE", "unit": ", mcg/dm³" },
+                  { "name": "DDT (p,p'-DDT)", "unit": ", mcg/dm³" },
+                  { "name": "DDD", "unit": ", mcg/dm³" },
+                  { "name": "o,p'-DDT", "unit": ", mcg/dm³" },
+                  { "name": "Alpha-hexachlorane", "unit": ", mcg/dm³" },
+                  { "name": "Beta-hexachlorane", "unit": ", mcg/dm³" },
+                  { "name": "Gamma-hexachlorane", "unit": ", mcg/dm³" },
+                  { "name": "Treflan", "unit": ", mcg/dm³" },
+                  { "name": "Hexachlorbenzene", "unit": ", mcg/dm³" },
+                  { "name": "Colour index", "unit": " Pt-Co scale, °" },
+                  { "name": "Transparency", "unit": ", cm" },
+                  { "name": "Transparency over white disk", "unit": ", m" },
+                  { "name": "Conductivity", "unit": ", cm/cm" },
+                  { "name": "Eh, mV", "unit": "" }
+                ],
+                "defaultOption": { "name": "NO₃", "unit": ", mg/dm³" }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Climate re-analysis",
+        "route": "/viz-item",
+        "nodes": [
+          {
+            "label": "Air temperature"
+          },
+          {
+            "label": "Precipitation"
+          }
+        ]
+      },
+      {
+        "label": "Climate projections",
+        "route": "/viz-item",
+        "nodes": [
+          {
+            "label": "Air temperature",
+            "overlayNames": [
+              {
+                "name": "Administrative oblasts",
+                "show": true,
+                "type": "checkbox"
+              },
+              {
+                "name": "net 0.11x0.11 ° (Euro-CORDEX)",
+                "show": true,
+                "type": "checkbox"
+              },
+              { "name": "River basins", "show": true, "type": "checkbox" }
+            ],
+            "defaultOverlayNames": []
+          },
+          {
+            "label": "Precipitation",
+            "overlayNames": [
+              {
+                "name": "Administrative oblasts",
+                "show": true,
+                "type": "checkbox"
+              },
+              {
+                "name": "net 0.11x0.11 ° (Euro-CORDEX)",
+                "show": true,
+                "type": "checkbox"
+              },
+              { "name": "River basins", "show": true, "type": "checkbox" }
+            ],
+            "defaultOverlayNames": []
+          }
+        ]
+      },
+      {
+        "label": "Agriculture",
+        "route": "/viz-item",
+        "nodes": [
+          {
+            "label": "N fertilizer (kgN/ha)"
+          },
+          {
+            "label": "P fertilizer (kgP²O⁵/ha)"
+          }
+        ]
+      },
+      {
+        "label": "Satellite data",
+        "route": "/viz-item",
+        "nodes": [
+          {
+            "label": "Elevation"
+          },
+          {
+            "label": "Land cover"
+          }
+        ]
+      },
+      {
+        "label": "SWAT",
+        "route": "/viz-item",
+        "nodes": [
+          {
+            "label": "Discharge"
+          },
+          {
+            "label": "Water yield"
+          },
+          {
+            "label": "Surface flow"
+          },
+          {
+            "label": "Lateral flow"
+          },
+          {
+            "label": "Groundwater flow"
+          },
+
+          {
+            "label": "Evapotranspiration"
+          }
+        ]
+      },
+      {
+        "label": "Forecast",
+        "route": "/viz-item",
+        "nodes": [
+          {
+            "label": "Air temperature"
+          },
+          {
+            "label": "Precipitation"
+          }
+        ]
+      },
+      {
+        "label": "Our projects",
+        "route": "/viz-item",
+        "nodes": []
+      }
+    ]
+  }
+}

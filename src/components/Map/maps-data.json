@@ -1,0 +1,63 @@
+{
+  "dbItem": {
+    "titles": [
+      "Observations",
+      "Re-analysis ERA5",
+      "Forecast",
+      "Climate projections",
+      "Agriculture",
+      "SWAT"
+    ],
+    "routes": [
+      "/db-item/observations",
+      "/db-item/re-analysis",
+      "/db-item/forecast",
+      "/db-item/climate-projections",
+      "/db-item/agriculture",
+      "/db-item/swat"
+    ]
+  },
+  "settingsItem": {
+    "titles": ["SWAT"],
+    "routes": ["/settings-item/swat"]
+  },
+  "vizItem": {
+    "mapOfUkraine": [
+      {
+        "name": "Visicom",
+        "zoom": 6.5,
+        "center": ["48.517834614762336", "32.2225272566878"],
+        "url": "https://tms{s}.visicom.ua/2.0.0/planet3/base_uk/{z}/{x}/{y}.png?key=2349912336cf6a00ee14f795661f5281",
+        "attribution": "<div style='font-size: 0.8571428rem; display: flex;'>Дані карт © 2019 ЧАО «<a href='https://api.visicom.ua/'>Визиком</a>»</div>",
+        "subdomains": "123",
+        "visible": true,
+        "tms": true,
+        "mapOptions": {
+          "zoomSnap": 0.5,
+          "zoomControl": false,
+          "maxZoom": 19,
+          "padding": [0, 0],
+          "attributionControl": false
+        }
+      },
+      {
+        "name": "Esri Topographic",
+        "zoom": 6.5,
+        "center": ["48.517834614762336", "32.2225272566878"],
+        "url": "http://{s}.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+        "attribution": "<div style='font-size: 0.8571428rem; display: flex;'>USGS, NOAA</div>",
+        "visible": false,
+        "tms": false,
+        "subdomains": ["server", "services"],
+        "mapOptions": {
+          "maxZoom": 19,
+          "minZoom": 1,
+          "zoomSnap": 0.5,
+          "zoomControl": false,
+          "padding": [0, 0],
+          "attributionControl": false
+        }
+      }
+    ]
+  }
+}
