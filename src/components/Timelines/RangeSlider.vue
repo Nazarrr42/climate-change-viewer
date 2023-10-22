@@ -360,16 +360,12 @@ input[type="range"]:focus::-ms-fill-upper {
   // background-size: contain;
 }
 .slider-mark-step {
-  width: 2px;
+  width: 1.5px;
   // width: 2px;
   position: relative;
   height: calc(#{$map-discret-slider-height} - 1px);
   border-radius: 0%;
-  background-image: url("../../assets/images/stick.svg");
-  // background-image: url("data:image/svg+xml,<svg width='2' height='103' viewBox='0 0 2 103' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 0V103' stroke='rgb(0, 0, 0)' /></svg>");
-  background-repeat: no-repeat;
-  // background-size: 50% 100%;
-  background-size: contain;
+  background-color: $main-darkbrown;
 }
 .slider-marks-step,
 .slider-marks-step-tricky {
